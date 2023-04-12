@@ -1,0 +1,109 @@
+.upper{
+    height: 60px;
+    width: 100%;
+    background-color: #ef6e00; 
+}
+.arrow{
+    color: white;
+    width: auto;
+    height: 20px;
+    margin: 15px 0px 0px 5px;
+}
+#word{
+    margin: -24px 0px 0px 140px;
+    color: white;
+}
+.bird{
+    color: white;
+    width: auto;
+    height: 20px;
+    margin: -25px 0px 0px 320px;
+    position: absolute;
+}
+.frequent{
+    width: 95%;
+    height: 50px;
+    background-color: #ef6e00; 
+    margin: 12px 0px 0px 9px;
+    border-radius: 10px;
+}
+.frequent h6{
+  color: white;
+  margin: 15px 0px 0px 100px;
+  position: absolute;
+}
+.limit{
+    width: 95%;
+    height: 80px;
+    background-color: rgb(241, 236, 236);
+    border-radius: 10px;
+    margin: 10px 0px 0px 10px;
+}
+.limit h6{
+    margin: -35px 0px 0px 220px;
+    font-weight: 700;
+}
+#circle{
+    height: 30px;
+    width: 30px;
+    background-color: #cc905b;
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 30%;
+    margin: -12px 0px 0px 5px;
+}
+.exchange {
+    color: #f14e02;
+    margin: 5px 0px 0px 7px;
+}
+.limit h5{
+    color: #dd6700;
+    font-size: 15px;
+    margin: -5px 0px 0px 50px;
+    position: absolute;
+    font-weight: 700;
+}
+.save{
+    height: 100px;
+    width: 95%;
+    display: flex;
+    margin: 15px 0px 0px 10px;
+}
+.box{
+    width: 50%;
+    height: 50px;
+    outline: none;
+    border: 1px solid  #db6b09;
+}
+.box h6{
+    color: #dd6700;
+    margin: 14px 0px 0px 10px;
+    font-size: 900;
+}
+.box:hover{
+    background-color: #db6b09;
+}
+.box h6:hover{
+    color: white;
+}
+.transferOther{
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    width: 94%;
+    margin-left: 6px;
+}
+
+.selectCont{
+    width: 100%;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#selectType h6{
+  color: darkgrey;
+}
+.selectBox{
+    margin-top: -50px;
+    padding: 10px;
+}
+
