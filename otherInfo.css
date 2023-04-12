@@ -1,0 +1,109 @@
+*{
+    padding: 0%;
+    box-sizing: border-box;
+}
+.openAccount{
+    width: 100%;
+    height: 55px;
+    background-color: #ef6e00;
+}
+.openAccount h6{
+  color: white;
+  font-size: 15px;
+  margin: 10px 0px 0px 75px;
+  position: absolute;
+}
+.imageBox{
+    width: 100%;
+    height: 150px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    /* flex-wrap: wrap; */
+}
+.box{
+    width: 68px;
+    height: 140px;
+    /* border: 2px solid #ef6e00;   */
+}
+.innerBox {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    border: 1px solid black;    
+}
+#word{
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 650;
+}
+.info{
+    width: auto;
+    height: 38px;
+    margin: 9px 0px 0px 24px; 
+}
+.image{
+    width: auto;
+    height: 38px;
+    margin: 9px 0px 0px 10px;
+}
+.fill h6{
+    font-weight: 700;
+    margin: -25px 0px 0px 10px;
+}
+#inputBox {
+    margin: 10px 0px 0px 10px;
+}
+#inputBox input{
+    margin-top: 10px;
+    outline: none;
+    height: 40px;
+    width: 95%;
+    border-radius: 10px;
+}
+#accountPurpose{
+    margin-top: 10px;
+    height: 40px;
+    width: 95%;
+    border-radius: 10px;
+}
+#next{
+    height: 50px;
+    width: 80px;
+    border: 2px solid #ef6e00;
+    justify-content: center;
+    margin: 5px 0px 0px 170px;
+    background-color: #ef6e00;
+    border-radius: 10px;
+}
+#next:hover{
+    background-color: #ef4400;
+    border: 2px solid #ef6e00;
+}
+#next h5{
+    margin: 7px 0px 0px 15px;
+    color: white;
+    font-weight: 400;
+}
+#next2{
+    height: 50px;
+    width: 80px;
+    border: 2px solid #ef6e00;
+    justify-content: center;
+    margin: -50px 0px 0px 265px;
+    background-color: #ef6e00;
+    border-radius: 10px;
+    position: absolute;
+}
+#next2:hover{
+    background-color: #ef4400;
+    border: 2px solid #ef6e00;
+}
+#next2 h5{
+    margin: 7px 0px 0px 15px;
+    color: white;
+    font-weight: 400;
+}
+

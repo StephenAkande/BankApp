@@ -1,0 +1,48 @@
+.openAccountBox{
+width: 100%;
+height: 60px;
+background-color:   #ef6e00;;
+}
+.gtLogo{
+    width: auto;
+    height: 120px;
+    margin: 100px 0px 0px 120px;
+}
+.Welcome{
+    margin: 0px 0px 0px 135px;
+}
+.Welcome h4{
+    font-weight: 680;
+    font-style: bold;
+}
+.word h6{
+    margin: 40px 0px 0px 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.boxContainer{
+    height: 80px;
+    width: 98%;
+    /* border: 2px solid #ef6e00; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+#box{
+    height: 50px;
+    width: 160px;
+    border: 2px solid #ef6e00;
+    border-radius: 10px;
+}
+#box:hover{
+    background-color: #ef6e00;
+}
+#box h5{
+    margin: 10px 0px 0px 55px;
+    color:  #ef6e00;
+}
+#box h5:hover{
+    color:  white;
+}
