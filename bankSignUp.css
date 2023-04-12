@@ -1,0 +1,167 @@
+*{
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:  green ;
+    background-image: url(/image/bank.jpg);
+    /* overflow-y: flow; */
+}
+#frame{
+    height: 160vh;
+    width: 350px;
+    border: 5px solid green;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    overflow-y: flow;
+}
+h4{
+   color: green;
+   margin: 10px 0px 0px 80px;
+   font-size: 25px;
+   font-family: sans-serif;
+}
+#fn{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 15px 0px 0px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+#ln{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#em{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#pass{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#ps{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#ps2{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#account{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#gender{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#userAddress{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#dob{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#userNumber{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#country{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#bvn{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+#pin{
+    border: 3px solid green;
+    height: 40px;
+    width: 320px; 
+    margin: 30px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    /* border: 5px solid rgb(13, 243, 13); */
+    height: 40px;
+    width: 120px; 
+    margin: 30px 0px 0px 120px;
+    border-radius: 5px;
+    background-color: green;
+    border: 5px solid chartreuse;
+    outline: none;
+}
+button:hover{ 
+    margin: 30px 0px 0px 120px;
+    background-color: rgb(3, 252, 3);
+    outline: none;
+    border: 5px solid rgb(45, 77, 14);
+}
+
+h3{
+    color: white;
+    margin: 2px 0px 0px 5px;
+    font-weight: 800;
+}
+#hidden{
+width: auto;
+height: 20px;
+margin: -30px 0px 0px 300px;
+position: absolute;
+background-color: black;
+}
+

@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    box-sizing: border-box;
+}
+.upper{
+    width: 100%;
+    height: 50px;
+    background-color: #ef6e00;
+}
+.upper .arrow{
+    width: auto;
+    height: 20px;
+} 
+.upper h6{
+    color: white;
+}
+.selectCont{
+    width: 100%;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+#selectType h6{
+  color: darkgrey;
+}
+.selectBox{
+    margin-top: 20px;
+    padding: 10px;
+}
+.phone{
+    color: #ef6e00;
+}
+#continueBox{
+    width: 95%;
+    height: 40px;
+    background-color: #ef6e00;
+    border-radius: 7px;
+    margin: 50px 0px 0px 8px;
+    
+}
+/* .pod{
+   padding: 7px 0px 0px 140px;
+   color: white;
+   font-weight: 600;
+   margin: -40px 0px 0px 0px ;
+} */
+#pinBox{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+

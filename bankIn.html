@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bankIn.css">
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <div id="box">
+            <h3>SIGN IN</h3>
+            <input type="text" placeholder="Enter Your Email" id="em">
+            <input type="text" placeholder="Enter Your password" id="ps">
+            <input type="text" placeholder="Confirm Your Password" id="ps2">
+            <button onclick="signIn()"> <h5>Sign In</h5></button>
+        </div>
+
+    <script>
+
+        let  allCustomers = JSON.parse(localStorage.getItem('localCustomers'))
+        console.log(allCustomers)
+
+        signIn=()=>{
+
+             userEmail = em.value,
+             userPassWord = ps.value,
+             confirmPassword = ps2.value
+
+             found = false
+            for (let index = 0; index < allCustomers.length; index++) { }
+
+            allCustomers.map((eachCustomers, index)=>{
+                
+                if(allCustomers[index].email == userEmail && allCustomers[index].password == userPassWord && 
+                allCustomers[index].password == confirmPassword){
+                    localStorage.setItem('currentUserIndex', index)
+                    found = true
+                    return
+                } 
+            })
+
+            if(found == true){
+                alert("welcome")
+                window.location.href = "bankDash.html"
+            }
+
+            else{
+                alert("User not Found")
+                window.location.href = "bankSignUp.html"
+            }
+
+            em.value ="", ps.value="", ps2.value=""
+        }
+
+    </script>
+    
+</body>
+</html>

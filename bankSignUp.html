@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bankSignUp.css">
+</head>
+<body>
+    <div id="frame">
+      <h4>Create Account</h4>
+      <input type="text" placeholder="Enter Your First Name" id="fn"> <br>
+    <input type="text" placeholder="Enter Your Last Name" id="ln"> <br>
+    <input type="text" placeholder="Enter Your Email" id="em"><br>
+    <input type="password" placeholder="Enter Your Password" id="ps"> <br>
+    <button onclick="showPassword()" id="hidden"></button>
+    <input type="password" placeholder="Confirm Your Password" id="ps2"> <br>
+    <input type="text" placeholder="Enter Your Phone Number" id="userNumber"> <br>
+    <!-- <input type="text" placeholder="Enter Your Address" id="userAddress"> <br> -->
+    <input type="date" placeholder="Enter Your Date of Birth" id="dob"> <br>
+    <input type="text" placeholder="Enter Your Nationality" id="country"> <br>
+    <input type="number" placeholder="Enter Your  BVN Number" id="bvn"> <br>
+    <input type="text" placeholder="Enter Your  Transaction Pin" id="pin"> <br>
+    <textarea name="" id="userAddress" cols="50" rows="5" placeholder="Enter your Adrress"></textarea>
+    <select name="" id="account">  
+      <option value="">Account Options</option> 
+      <option value="Savings">Savings</option>
+      <option value="current">Current</option>
+    </select>
+    
+    <select name="" id="gender"> 
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <button onclick="signUp()">Sign Up</button> <br> 
+    </div>
+   
+  
+
+    <script>
+
+        let allCustomers = []
+
+        if(localStorage.localCustomers){
+            allCustomers = JSON.parse(localStorage.getItem("localCustomers"))
+        }
+
+        signUp=()=>{
+          if(ps.value != ps2.value || fn.value =="" || ln.value == "" || em.value =="" || ps.value==""
+          || ps.value== "" || userNumber.value =="" || dob.value =="" || country.value=="" || bvn.value=="" || 
+          pin.value=="" ||  userAddress.value==""){
+            alert("Fill in with Correct Details")
+          } else{
+            eachCustomer = {
+            firstname : fn.value,
+            last: ln.value,
+            email: em.value,
+            password: ps.value,
+            passwordSecond: ps2.value,
+            myAccount:account.value,
+            myGender: gender.value,
+            phoneNumber : userNumber.value,
+            address: userAddress.value,
+            dateOfBirth:dob.value,
+            nationality:country.value,
+            bvn: bvn.value,
+            pinCode: pin.value, 
+            accountNo: `${ Math.floor(Math.random()*10000000000)}`,
+            balance: 0,
+            bankCustomers: []
+          }
+          allCustomers.push(eachCustomer)
+          console.log(allCustomers)
+          localStorage.setItem("localCustomers", JSON.stringify(allCustomers))
+          window.location.href = "bankIn.html"
+          fn.value ="", ln.value ="", em.value="", ps.value="", ps2.value=""
+          userNumber.value ="", dob.value ="", country.value="", bvn.value="", pin.value="",
+          userAddress.value=""
+          } 
+        }
+
+        showPassword=()=>{
+          if(ps.type== "password"){
+            ps.type = "text" 
+          }else{
+            ps.type = "password" 
+          }
+        }
+
+    </script>
+</body>
+</html>

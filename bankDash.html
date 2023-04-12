@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <marquee behavior="" direction=""><h1>welcome</h1></marquee>
+    <div id="disp"></div>
+    <input type="number" id="moneyTransaction">
+    <button onclick="depositMoney()">Deposit</button>
+    <div id="display"></div>
+    <!-- <input type="text" id="balanceShow"> -->
+    
+
+
+<script>
+       let  allCustomers = JSON.parse(localStorage.getItem("localCustomers"))
+     
+
+         load=()=>{
+            currentUserIndex = localStorage.getItem('currentUserIndex')
+        disp.innerHTML = ` <h1>Welcome, ${allCustomers[currentUserIndex].firstname}</h1>
+                           <h1> Account Number =${allCustomers[currentUserIndex].accountNo}</h1>
+                         `
+         }
+       
+
+
+         depositMoney=()=>{
+            let     customerBalance = Number(allCustomers[currentUserIndex].balance)
+            addOn = Number(moneyTransaction.value)
+            display.innerHTML = ` balance ${addOn + customerBalance }`
+
+
+         }
+        
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
