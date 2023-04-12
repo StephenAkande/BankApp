@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ATM.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+    <title>ATM Machine</title>
+</head>
+<body style="background-color: rgb(92, 43, 226);">
+    <section class="row m-auto my-5 p-4">
+        <main class="text-white d-flex justify-content-between">
+            <h3>ATM</h3>
+            <a href="*" class="nav-link">Card Return</a>
+        </main>
+
+        <main class="row">
+            <main class="pot col">
+                <div>
+                    <h5>Welcome</h5>
+                    <h3>Rioy Fresh</h3>
+                </div>
+                <div>
+                    <h5>Account 0 1</h5>
+                    <h3>001234987</h3>
+                </div>
+                <div>
+                    <h5>Savings 02</h5>
+                    <h3 id="accountbalance">$100000</h3>
+                </div>
+            </main>
+            <main class="butt col row h-50 gap-2 justify-content-end">
+                <button class="col-5 btn" onclick="deduct()">Withdraw</button>
+                <button class="col-5 btn" onclick="add()">Deposit</button>
+                <button class="col-5 btn" onclick="minus()">Payments</button>
+                <button class="col-5 btn" onclick="subtract()">Airtime</button>
+                <button class="col-5 btn">Account Settings</button>
+                <button class="col-5 btn">Other</button>
+            </main>
+        </main>
+        <main style="text-align: center;">
+            <input id="userinput" type="text" placeholder="$">
+        </main>
+    </section>
+
+
+
+
+    <script>
+        function deduct() {
+
+            var amount = userinput.value
+
+            var balance = accountbalance.innerText
+
+            var balance = 100000
+
+            var money = Number (balance) - Number (amount)
+            accountbalance.innerText = money
+
+        }
+
+        function add() {
+
+            var amount = userinput.value
+
+            var balance = accountbalance.innerText
+
+            var money = Number (balance) + Number (amount)
+            accountbalance.innerText = money
+
+        }
+        function minus() {
+
+            var amount = userinput.value
+
+            var balance = accountbalance.innerText
+
+            var money = Number (balance) - Number (amount)
+            accountbalance.innerText = money
+
+        }
+        function subtract() {
+
+            var amount = userinput.value
+
+            var balance = accountbalance.innerText
+
+            var money = Number (balance) - Number (amount)
+            accountbalance.innerText = money
+
+}
+    </script>
+</body>
+</html>

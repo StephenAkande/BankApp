@@ -1,0 +1,33 @@
+.login{
+   margin: 10px 0px 0px 500px;
+}
+.logo{
+    margin-left: 80px;
+    z-index: 888;
+}
+nav{
+z-index: 99999;
+}
+.herosection{
+  position: absolute;
+  top: 0px;
+  box-shadow: 1px 1px 5px inset hsl(150, 8%, 95%);
+}
+.header{
+  position: absolute;
+  top: 150px;
+  margin-left: 100px;
+  height: 300px;
+  width: 850px;
+}
+.header h1{
+  font-size: 60px;
+}
+.header p{
+  font-size: 20px;
+}
+.fit{
+  font-size: 19px;
+   padding-left: 5px;
+}
+

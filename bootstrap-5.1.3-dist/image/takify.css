@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px 0px 960px;
+    /* position: fixed; */
+    top: 0px;
+}
+.box{
+    width: 90px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: #00b4d8;
+    box-shadow: 3px 3px 3px 3px #C6ECF8;
+}
+nav .box a{
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+   padding: 20px 0px 0px 15px;
+}
+.box a:hover{
+    text-decoration: underline;
+}
+.herosection{
+    width: 100%;
+    height: 91vh;
+    /* border: 2px solid black; */
+    background-image: url(./image/takiBg.jpg);
+}
+.herosection2{
+    width: 100%;
+    height: 92vh;
+    /* border: 2px solid black; */
+    position: absolute;
+    margin-top: -548px;
+    animation-name: hero;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse
+}
+.couple{
+    width: 100%;
+    height: 240px;
+    /* border: 2px solid black; */
+}
+.innerbox{
+    width: 92%;
+    height:150px;
+    /* border: 2px solid maroon; */
+    margin: 45px 0px 0px 60px;
+}
+.couplebox{
+    height: 148px;
+    width: 250px;
+    /* border: 2px solid black; */
+}
+.camera{
+    width: 250px;
+    height: 148px;
+}
+.wordbox{
+    width: 950px;
+    height:145px;
+    /* border: 2px solid black; */
+    margin-left: 280px;
+    margin-top: -152px;
+}
+.line{
+    height: 2px;
+    width: 30px;
+    border: 2px solid #023e8a;
+    margin-top: 10px;
+}
+.wordbox p{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    text-align: justify; 
+}
+.signupBg{
+    width: 100%;
+    height: 210px;
+    /* border: 2px solid black; */
+    background-color: #E3F2FD;
+}
+.login{
+    margin-left: 640px;
+    margin-top: 30px;
+}
+.signupBg p{
+    font-size: 12px;
+    color: #00b4d8;
+    padding: 0px 0px 0px 615px;
+}
+.signupBg h5{
+    font-size: 12px;
+    padding: 0px 0px 0px 550px;
+}
+.signup{
+    height: 35px;
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 610px;
+    margin-top: 30px;
+    background-color: #00b4d8;
+    box-shadow: 3px 3px 3px  #023e8a;
+}
+.signup a{
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.we{
+    margin-left: 480px;
+}
+.we p{
+    font-size: 25px;
+    color: #00b4d8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 10px 0px 48px;
+}
+.items{
+    width: 170px;
+    height: 370px;
+    border: 2px solid rgb(241, 228, 228);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #E3F2FD;
+    background-color: whitesmoke;
+    /* z-index: 1; */
+}
+.car1{
+    width: auto;
+    height: 170px;
+    margin-top: 10px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid black; */
+    border-radius: 100px;
+    margin-left: 60px;
+    margin-top: -30px;
+    background-color: white;
+    /* z-index: 999999999999; */
+    position: absolute;
+}
+.circle:hover{
+    background-color: #00b4d8;
+}
+.motor{
+    width: auto;
+    height: 70px;
+    margin-top: -5px;
+    margin-left: -10px;
+    /* position: absolute; */
+    /* z-index: -999999999999; */
+}
+.motor:hover{
+    color: white;
+}
+.items p{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #7abd03;
+}
+.items h4{
+    font-size: 10px;
+    padding: 20px 0px 0px 10px;
+    line-height: 15px;
+    text-align: justify;
+}
+.motorcycle{
+    width: auto;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5px; 
+}
+.bus{
+    width: auto;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5px; 
+}
+.peg{
+    width: auto;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;  
+}
+.banner{
+    width: 100%;
+    height: 150px;
+    /* border: 2px solid black; */
+    margin-top: -250px;
+    background-image: url(./image/banner.png);
+    background-size: contain;
+}
+.bluebg{
+    width: 100%;
+    height: 120px;
+    /* border: 2px solid black; */
+    background-color: blue;
+}
+.bluebg2{
+    width: 65%;
+    height: 430px;
+    background-color: #0047b4;
+}
+.ease{
+    height: 25px;
+    width: 308px;
+    margin-top: -340px;
+    margin-left: 130px;
+    background-color: blue; 
+}
+.ease p{
+    font-size: 25px;
+    color: white;
+    font-weight: 550;
+}
+.hand{
+    width: auto;
+    height: 400px;
+    margin: -85px 0px 0px 720px;
+    z-index: -1;
+}
+.background{
+    width: 68%;
+    height: 200px;
+}
+.handmobile2{
+    width: 180px;
+    height: 315px;
+    /* border: 2px solid black; */
+    margin: -360px 0px 0px 772px;
+    /* z-index: 99999; */
+    position: absolute;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes slider{
+    0%{
+        background-image: url(./image/phonemap.jpg);
+    }
+    33%{
+       background-image: url(https://atomty1.github.io/goTaxi/assets/view2.jpg);
+     }
+    66%{
+        background-image: url(./image/phonemap.jpg);
+    }
+    100%{
+        background-image: url(./image/phonemap.jpg);
+    }
+}
+
+@keyframes hero{
+    0%{
+        background-image: url(./image/takiBg.jpg);
+    }
+    33%{
+       background-image: url(./image/herosection2.jpg);
+     }
+    66%{
+        background-image: url(./image/herosection3.jpg);
+    }
+    100%{
+        background-image: url(./image/takiBg.jpg);
+    }
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    margin-top: -15px;
+    padding: 50px 0px 0px 150px;
+}
+.footertaxi{
+    width: auto;
+    height: 100px;
+}
+.footlink{
+    padding: 5px 0px 0px 120px;
+}
+.linkdiv{
+   color: white; 
+   margin-left: 500px;
+   margin-top: -160px;
+   font-size: 11px;
+   line-height: 22px;
+}
+.linkdiv ul a{
+    text-decoration: none;
+    color: rgb(139, 129, 129);
+    list-style: none;
+}
+.linkdiv ul a:hover{
+   text-decoration: underline;
+   color: #7abd03;
+}
+.joindriver{
+    height: 35px;
+    width: 200px;
+    border: 1px solid   #00b4d8;
+    border-radius: 50px;
+    margin-left: 800px;
+    margin-top: -120px;
+}
+.joindriver P{
+    color: #00b4d8;
+    font-size: 12px;
+    margin-left: 58px;
+    margin-top: 8px;
+}
+.joindriver:hover{
+    background-color: #00b4d8;
+}
+footer .joindriver P:hover{
+    text-decoration: underline;
+    color: white;
+}
+.last{
+    margin: 150px 0px 0px 430px;
+}
+.last p{
+    color: white;
+    font-size: 10px;
+}
