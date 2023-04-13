@@ -153,8 +153,15 @@ function depositMoney() {
     userInput.value=""
 }
 function withdrawMoney() {
-    allUsers[currentUserIndex].balance = Number(allUsers[currentUserIndex].balance) - Number(userInput.value)
-    myBalance.innerHTML = `Balance : # ${allUsers[currentUserIndex].balance}`
+    if(userInput.value > allUsers[currentUserIndex].balance ){
+        alert("Insufficient Fund")
+    }
+        else{
+            allUsers[currentUserIndex].balance
+            = Number(allUsers[currentUserIndex].balance) - Number(userInput.value)
+           myBalance.innerHTML = `Balance : # ${allUsers[currentUserIndex].balance}`
+        }
+   
     localStorage.setItem('gtUsers', JSON.stringify(allUsers))
     userInput.value=""
 }
